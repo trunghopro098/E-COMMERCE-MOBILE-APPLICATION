@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckOut"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"  >
+    <androidx.appcompat.widget.Toolbar
+        app:title="Check out"
+        app:titleTextColor="#F3F1F1"
+        android:id="@+id/toolbarCheckout"
+        android:background="#2E3C8F"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+<TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please confirm the information!"
+    android:textSize="19sp"
+    android:textColor="#000"
+    android:background="#EC8888"
+    android:gravity="center"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="3dp">
+</TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5EFF1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="3dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#F30606"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm delivery information!"
+            android:gravity="center"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#F30606"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_CheckoutName"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Hồ Văn Trung"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#F30606"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_CheckoutAddress"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address : Quang Nam"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#F30606"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_CheckoutEmail"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email : trungho098@gmail.com"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#F30606"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            />
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_CheckoutPhone"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone : 0332755831"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="#D5EFF1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order confirmation !"
+            android:textColor="#F50505"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingBottom="4dp"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRcycalview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#D5EFF1"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/txt_Checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BẠN VUI LONG CHỦNG BỊ SỐ TIỀN 5.000.000Đ ĐỂ THANH TOÁN CHO NHÂN VIÊN CỦA CHÚNG TÔI"
+            android:textSize="15dp"
+            android:textColor="#6F0E1A"/>
+        <Button
+
+            android:background="@drawable/btn_checkout"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Checkoutend"
+            android:text="Order now"
+            android:textColor="#FAF7F7"
+            android:textSize="20dp"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

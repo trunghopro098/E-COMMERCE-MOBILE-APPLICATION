@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:id="@+id/rcvimaproduct"
+        android:src="@drawable/nike"/>
+    <TextView
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:id="@+id/txt_nameGiay"
+        android:layout_marginTop="5dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Giaỳ nike thể thao của"
+
+       android:gravity="center"
+        android:textColor="#FFFFFF">
+
+    </TextView>
+
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_weight="0.8"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="4000000"
+                android:gravity="center"
+                android:textColor="#F1F0F0"
+                >
+            </TextView>
+
+    <TextView
+        android:id="@+id/txt_pricepromotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#F1F0F0"></TextView>
+
+    <Button
+        android:id="@+id/btn_Detail"
+        android:layout_marginTop="5dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="product details"
+        android:background="@drawable/btn_detail">
+    </Button>
+    </LinearLayout>
+</LinearLayout>

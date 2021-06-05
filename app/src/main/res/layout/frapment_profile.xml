@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEFF0"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Personal information"
+        android:layout_gravity="center"
+        android:background="#C2EEEE"
+        android:textColor="#C52E2E"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="#F70606">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="12dp"
+            android:layout_marginTop="3dp"
+           android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hồ Văn Trung"
+            android:id="@+id/protextName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C40AE4"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textColor="#F30404">
+
+        </TextView>
+        <TextView
+
+            android:layout_marginTop="3dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quangr Nam"
+            android:id="@+id/protextAddress"
+            android:paddingLeft="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C40AE4"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textColor="#F10909">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0332755831"
+            android:id="@+id/protextPhone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C40AE4"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textColor="#FA0808">
+
+        </TextView>
+        <TextView
+            android:paddingLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trungho098@gmail.com"
+            android:id="@+id/protextEmail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C40AE4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_detail"
+            android:text="Edit personal information"
+            android:textColor="#9B0505"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

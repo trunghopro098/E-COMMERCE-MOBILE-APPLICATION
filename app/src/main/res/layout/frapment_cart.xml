@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F8"
+    android:weightSum="10">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/Carttoolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        app:title="CART"-->
+<!--        app:titleTextColor="#FCF8F8"-->
+<!--        android:background="#2E3C8F">-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_cv_cart"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your cart is empty!"
+                android:gravity="center"
+                android:textColor="#F80303"
+                android:textSize="30dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cartRcycalview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <TextView
+
+                android:textColor="#031F9C"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total :"
+                android:textSize="30dp"
+                android:gravity="left|center"
+                >
+
+            </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1.4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#031F9C"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4000000d"
+                    android:textSize="30dp"
+                    android:id="@+id/txt_totalcar">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="cart payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/Thanhtoangiohang"
+        android:background="@drawable/btn_sping"/>
+
+
+</LinearLayout>

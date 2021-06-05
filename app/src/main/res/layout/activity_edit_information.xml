@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_information"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Update information"
+        app:titleTextColor="#F3F1F1"
+        android:id="@+id/toolbar"
+        android:background="#2E3C8F"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="#F10D0D">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hồ Văn Trung"
+            android:id="@+id/EdittextName"/>
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:textColor="#F00A0A">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quangr Nam"
+            android:id="@+id/EdittextAddress"/>
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textColor="#F10808">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0332755831"
+            android:id="@+id/EdittextPhone"/>
+
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textColor="#F01212">
+
+        </TextView>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trungho098@gmail.com"
+            android:id="@+id/EdittextEmail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C40AE4"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:layout_marginRight="25dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_detail"
+            android:text="back"
+            android:id="@+id/btnBACK"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/btnSend"
+            android:textColor="#F80707"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_detail"
+            android:text="Update"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/rcvImaviewVertical"
+        android:layout_width="122dp"
+        android:layout_height="110dp"
+        android:src="@drawable/nike" />
+
+    <TextView
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/rcvtextprice"
+        android:background="@drawable/btnvertical"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1200000"
+        android:textColor="#F50909"
+        android:textSize="12dp" />
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen123">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!-- set layuot for slide-->
+<LinearLayout
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal">
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLASH SALE"
+        android:paddingLeft="3dp"
+        android:fontFamily="@font/chude1"
+        android:textColor="#FCFAFA">
+    </TextView>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="116dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fontFamily="@font/chude1"
+        android:paddingLeft="3dp"
+        android:text="BUY NOW"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textColor="#F8C304"></TextView>
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_productVertical"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+       />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRESTIGE-QUALITY-FASHION"
+        android:textColor="#FCFAFA"
+        android:textSize="14dp"
+        android:fontFamily="@font/chude1"
+        android:gravity="center">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_product_doc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

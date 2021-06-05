@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/nen"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="200dp"
+        android:id="@+id/img_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splashmyshoes"
+    />
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+       android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chude1"
+        android:text="WELCOME TO MYSHOSES"
+        android:textColor="#000"
+        android:textSize="27dp"
+/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Prestigious and top-quality brand in Vietnam."
+        android:textColor="#BE3308"
+        android:textSize="16dp"
+ />
+
+
+</LinearLayout>
